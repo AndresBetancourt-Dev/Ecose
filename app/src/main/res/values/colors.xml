@@ -3,4 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="ecoseMainColor">#00BABA</color> <!--Main Turquoise Color-->
+    <color name="ecoseMainWhite">#EFFAFB</color> <!--White Color-->
+    <color name="ecoseMainGray">#D8DFE5</color> <!--Gray Color-->
+    <color name="ecoseMainCream">#E7E6BE</color> <!--Cream Color-->
 </resources>
