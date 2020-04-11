@@ -1,4 +1,4 @@
-package com.adbs.ecose;
+package com.adbs.ecoseapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
