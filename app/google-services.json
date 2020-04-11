@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839049193779",
+    "firebase_url": "https://ecose-86e89.firebaseio.com",
+    "project_id": "ecose-86e89",
+    "storage_bucket": "ecose-86e89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839049193779:android:dece499b78a2b961877646",
+        "android_client_info": {
+          "package_name": "com.adbs.ecoseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839049193779-gqcnod9osph3rngp1fvjgd86qjq3d525.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adbs.ecoseapp",
+            "certificate_hash": "ebddb31110aa36fba0cc1d32bcc2ac367f074601"
+          }
+        },
+        {
+          "client_id": "839049193779-ib9tjbrsbvhlgdimbttckm0lph12hjs0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApS5I2ybDy_Eb9S8CXW_1c3sMMZgltVXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839049193779-ib9tjbrsbvhlgdimbttckm0lph12hjs0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
