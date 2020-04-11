@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="editTextStyle">
+        <item name="android:colorControlActivated">@color/ecoseMainWhite</item>
+        <item name="android:colorControlHighlight">@color/ecoseMainWhite</item>
+        <item name="android:colorControlNormal">@color/ecoseMainWhite</item>
+        <item name="android:colorAccent">@color/ecoseMainWhite</item>
+    </style>
+
 </resources>

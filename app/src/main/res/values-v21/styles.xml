@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="editTextStyle">
+        <item name="android:colorControlActivated">@color/ecoseMainWhite</item>
+        <item name="android:colorControlHighlight">@color/ecoseMainWhite</item>
+        <item name="android:colorControlNormal">@color/ecoseMainWhite</item>
+        <item name="android:colorAccent">@color/ecoseMainWhite</item>
+        <item name="android:textColorHint">@color/ecoseMainWhite</item>
+    </style>
+</resources>

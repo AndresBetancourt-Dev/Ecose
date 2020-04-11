@@ -20,4 +20,14 @@
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/big_fish_extras" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/poppins_bold" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/poppins_medium" />
+
 </font-family>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="ecose">ecose</string>
+    <string name="olvidaste_tu_contrasena">¿Olvidaste tu Contraseña?</string>
+    <string name="no_tienes_cuenta_reg_strate_aqu">¿No tienes cuenta? Regístrate aquí</string>
+    <string name="log_in">Log In</string>
 </resources>
