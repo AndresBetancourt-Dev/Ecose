@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/ecoseMainColor">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/registro"
+            android:textAlignment="center"
+            android:textColor="@color/ecoseMainWhite"
+            android:textColorHint="@color/ecoseMainWhite"
+            android:textSize="40sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:theme="@style/editTextStyle"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/ecoseMainWhite"
+                android:textColorHint="@color/ecoseMainWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:theme="@style/editTextStyle"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/nombre"
+                android:textColor="@color/ecoseMainWhite"
+                android:textColorHint="@color/ecoseMainWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:theme="@style/editTextStyle"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Teléfono"
+                android:textColor="@color/ecoseMainWhite"
+                android:textColorHint="@color/ecoseMainWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:theme="@style/editTextStyle"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/contrase_a"
+                android:textColor="@color/ecoseMainWhite"
+                android:textColorHint="@color/ecoseMainWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/registerCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/btn_background"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Cancelar"
+                android:textColor="@color/ecoseMainColor"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/registerDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_background"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Regístrate"
+                android:textColor="@color/ecoseMainColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
