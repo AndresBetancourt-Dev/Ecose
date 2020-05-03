@@ -8,4 +8,5 @@
     <string name="correo">Correo</string>
     <string name="nombre">Nombre</string>
     <string name="contrase_a">Contraseña</string>
+    <string name="login">Login</string>
 </resources>

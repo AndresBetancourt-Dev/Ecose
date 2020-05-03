@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
@@ -65,7 +66,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final TextInputEditText email = findViewById(R.id.loginUser);
+        final TextInputEditText password = findViewById(R.id.loginPassword);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onClick(View v) {
+                if(TextUtils.isEmpty(email.getText().toString())){
+                    snackbar = Snackbar.make(mainLayout,"No ingresaste tu e-mail",Snackbar.LENGTH_SHORT);
+                    snackbar = customizeSnackBar(snackbar);
+                    snackbar.show();
+                    return;
+                }
+
+
+                if(TextUtils.isEmpty(password.getText().toString())){
+                    snackbar = Snackbar.make(mainLayout,"No ingresaste tu contraseña",Snackbar.LENGTH_SHORT);
+                    snackbar = customizeSnackBar(snackbar);
+                    snackbar.show();
+                    return;
+                }
+
+                if((password.getText().toString().length())<6){
+                    snackbar = Snackbar.make(mainLayout,"La contraseña debe ser de almenos de 6 caracteres",Snackbar.LENGTH_SHORT);
+                    snackbar = customizeSnackBar(snackbar);
+                    snackbar.show();
+                    return;
+                }
+
+                auth.signInWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        startActivity(new Intent(MainActivity.this,Menu.class));
+                        finish();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        snackbar = Snackbar.make(mainLayout,"Este usuario no se encuentra en el sistema",Snackbar.LENGTH_SHORT);
+                        snackbar = customizeSnackBar(snackbar);
+                        snackbar.show();
+                    }
+                });
+            }
+        });
+
     }
+
+
 
     public void showRegisterDialog() {
         final AlertDialog dialog = new AlertDialog.Builder(this).create();
