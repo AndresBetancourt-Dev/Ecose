@@ -4,11 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -30,9 +27,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends AppCompatActivity {
+public class Main extends AppCompatActivity {
 
    Button loginButton, register, cancelButton;
    Snackbar snackbar;
@@ -47,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mainLayout = (ConstraintLayout)findViewById(R.id.rootLayout);
+        mainLayout = findViewById(R.id.rootLayout);
 
         //Init Firebase components
         auth = FirebaseAuth.getInstance();
@@ -55,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         users = firebaseDatabase.getReference("Users");
 
         /*Link Objects with it's XML components*/
-        loginButton = (Button)findViewById(R.id.loginButton);
-        registerButton = (TextView)findViewById(R.id.registerButton);
-        forgotPasword = (TextView)findViewById(R.id.forgot_password);
+        loginButton = findViewById(R.id.loginButton);
+        registerButton = findViewById(R.id.registerButton);
+        forgotPasword = findViewById(R.id.forgot_password);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 auth.signInWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        startActivity(new Intent(MainActivity.this,Menu.class));
+                        startActivity(new Intent(Main.this,Menu.class));
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
@@ -227,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
     public Snackbar customizeSnackBar(Snackbar snackbar){
         View snackbarView = snackbar.getView();
         snackbarView.setBackground(getResources().getDrawable(R.drawable.snackbar_bg));
-        TextView textView = (TextView)snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
+        TextView textView = snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
         Typeface font = getResources().getFont(R.font.poppins_medium);
         textView.setTypeface(font);
         textView.setTextColor(Color.parseColor("#00BABA"));
