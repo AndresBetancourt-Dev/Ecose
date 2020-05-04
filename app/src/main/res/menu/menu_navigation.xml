@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_account"
+        android:title="@string/cuenta"
+        android:icon="@drawable/ic_account"
+         />
+
+    <item android:id="@+id/nav_about"
+        android:title="@string/nosotros"
+        android:icon="@drawable/ic_toys_black_24dp"
+
+        />
+
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home"/>
+
+    <item android:id="@+id/nav_rank"
+        android:icon="@drawable/ic_stars_black_24dp"
+        android:title="@string/ranking"/>
+
+    <item android:id="@+id/nav_referral"
+        android:icon="@drawable/ic_supervisor_account_black_24dp"
+        android:title="@string/referidos"
+        />
+
+</menu>

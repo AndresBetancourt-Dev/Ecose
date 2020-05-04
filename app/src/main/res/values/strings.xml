@@ -9,4 +9,9 @@
     <string name="nombre">Nombre</string>
     <string name="contrase_a">Contraseña</string>
     <string name="login">Login</string>
+    <string name="referidos">Referidos</string>
+    <string name="cuenta">Cuenta</string>
+    <string name="nosotros">Nosotros</string>
+    <string name="home">Home</string>
+    <string name="ranking">Ranking</string>
 </resources>
