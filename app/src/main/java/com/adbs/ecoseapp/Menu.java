@@ -11,6 +11,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Menu extends AppCompatActivity {
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +25,7 @@ public class Menu extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new Home()).commit();
+                    new Home(Menu.this)).commit();
         }
     }
 
@@ -32,7 +35,7 @@ public class Menu extends AppCompatActivity {
             Fragment selectedFragment = null;
             switch (item.getItemId()){
                 case R.id.nav_home:
-                    selectedFragment = new Home();
+                    selectedFragment = new Home(Menu.this);
                     break;
                 case R.id.nav_about:
                     selectedFragment = new About();

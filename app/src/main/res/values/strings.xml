@@ -14,4 +14,5 @@
     <string name="nosotros">Nosotros</string>
     <string name="home">Home</string>
     <string name="ranking">Ranking</string>
+    <string name="title_activity_maps_locations">Map</string>
 </resources>
