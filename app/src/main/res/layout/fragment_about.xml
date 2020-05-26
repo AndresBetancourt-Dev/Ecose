@@ -1,15 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@color/ecoseMainWhite">
+    android:background="@color/ecoseMainColor">
 
     <TextView
+        android:id="@+id/aboutTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_bold"
         android:gravity="center_horizontal"
-        android:text="About"
+        android:text="Nosotros"
+        android:layout_marginTop="50dp"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textColor="@color/ecoseMainWhite"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/aboutMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/aboutTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/ecoseMainWhite"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Ecose es una aplicación móvil que haciendo uso del concepto de gamificación permite al usuario monitorear sus acciones cotidianas y ser más responsables con respecto a ellas."/>
+
+    <TextView
+        android:id="@+id/aboutSecondaryContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/ecoseMainWhite"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Por cada una de estas acciones el usuario será recompensado con ciertas bonificaciones que podra redimir en tiendas ecólogicas, entidades multiservicios y semejantes."
+        app:layout_constraintTop_toBottomOf="@+id/aboutMainContent"/>
+
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:columnCount="2"
+        android:rowCount="1"
+        app:layout_constraintTop_toBottomOf="@+id/aboutSecondaryContent"
+        android:layout_height="200dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            >
+
+            <ImageView
+                android:id="@+id/aboutActions"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/about_content"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                app:layout_constraintTop_toBottomOf="@+id/aboutActions"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:text="Completa acciones"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/ecoseMainWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginLeft="40dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            >
+
+            <ImageView
+                android:id="@+id/aboutRewards"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/welcome_challenges"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Obtén logros y recompensas"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/ecoseMainWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutRewards" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

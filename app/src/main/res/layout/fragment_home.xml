@@ -11,30 +11,27 @@
         android:layout_height="200dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="25dp"
+        android:paddingHorizontal="5dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.viewpager.widget.ViewPager
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:id="@+id/viewPager"
-            android:layout_height="match_parent"
-            android:overScrollMode="never"
-            android:layout_centerInParent="true"
-            android:clipToPadding="false"
-            android:foregroundGravity="center"
-            ></androidx.viewpager.widget.ViewPager>
+            app:cardCornerRadius="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="0dp"
+            android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Order Now!"
-            android:textColor="#fff"
-            android:background="@drawable/btn_background"
-            android:paddingHorizontal="30dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
-            android:layout_centerHorizontal="true"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/eventos_image_2" />
 
-            />
+        </androidx.cardview.widget.CardView>
+
 
 
     </RelativeLayout>
