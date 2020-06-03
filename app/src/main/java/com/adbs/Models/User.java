@@ -2,22 +2,28 @@ package com.adbs.Models;
 
 public class User {
     private String email,name,phone,password;
-    private int points;
+    private int points,actions;
     private final int INITIAL_POINTS = 0;
+    private final int INITIAL_ACTIONS = 0;
 
     public int getINITIAL_POINTS() {
         return INITIAL_POINTS;
     }
 
+    public int getINITIAL_ACTIONS() {
+        return INITIAL_ACTIONS;
+    }
+
     public User() {
     }
 
-    public User(String email, String name, String phone, String password, int points) {
+    public User(String email, String name, String phone, String password, int points,int actions) {
         this.email = email;
         this.name = name;
         this.phone = phone;
         this.password = password;
         this.points = points;
+        this.actions = actions;
     }
 
     public String getEmail() {
@@ -58,5 +64,13 @@ public class User {
 
     public void setPoints(int points) {
         this.points = points;
+    }
+
+    public int getActions() {
+        return actions;
+    }
+
+    public void setActions(int actions) {
+        this.actions = actions;
     }
 }

@@ -4,15 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".Ods">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Este es el Activity de ODS"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/ods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/ods_title"
+
         app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:textAlignment="center"></TextView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:layout_marginTop="-20dp"
+        android:columnCount="3"
+        android:rowCount="6"
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ods_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg18"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg01"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg02"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg03"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg04"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg05"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg06"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg07"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg08"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg09"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg10"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg11"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg12"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg13"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg14"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg15"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg16"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/sdg17"
+            android:layout_height="120dp"/>
+    </GridLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

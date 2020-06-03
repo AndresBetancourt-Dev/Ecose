@@ -13,7 +13,6 @@ public class Menu extends AppCompatActivity {
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +40,7 @@ public class Menu extends AppCompatActivity {
                     selectedFragment = new About();
                     break;
                 case R.id.nav_account:
-                    selectedFragment = new Profile();
+                    selectedFragment = new Profile(Menu.this);
                     break;
                 case R.id.nav_rank:
                     selectedFragment = new Ranking();

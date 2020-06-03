@@ -178,6 +178,7 @@ public class Main extends AppCompatActivity {
                         user.setPhone(phone.getText().toString());
                         user.setPassword(password.getText().toString());
                         user.setPoints(user.getINITIAL_POINTS());
+                        user.setActions(user.getINITIAL_ACTIONS());
 
                         users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override

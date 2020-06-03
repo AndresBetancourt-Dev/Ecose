@@ -7,13 +7,199 @@
     tools:context=".Rewards">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Este es el activity de las recompensas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/poppins_bold"
         android:gravity="center"
+        android:text="Premios"
+        android:textSize="40sp"
         android:textAlignment="center"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="20dp">
+        <GridLayout
+            android:rowCount="1"
+            android:columnCount="3"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ecoseMainColor">
+            <androidx.cardview.widget.CardView
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rappi"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="15dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/wwf"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="15dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/brac"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_marginTop="115dp"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ecoseMainColor">
+            <androidx.cardview.widget.CardView
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/carulla"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="20dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/exito"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/surtimax"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_marginTop="345dp"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ecoseMainColor">
+            <androidx.cardview.widget.CardView
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/nutresa"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="15dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/lautre"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                  android:layout_marginRight="15dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blaugap"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

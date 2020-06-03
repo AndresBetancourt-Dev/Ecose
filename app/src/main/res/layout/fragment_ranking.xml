@@ -1,8 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/ecoseMainWhite">
 
+    <ImageView
+        android:id="@+id/ranking_trophy"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/trophy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ranking_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Consumidores más responsables"
+        android:textSize="27sp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_trophy" />
 
 
-</RelativeLayout>
+    <GridLayout
+        android:id="@+id/ranking_header"
+        android:background="#006A6A"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingVertical="15dp"
+        android:rowCount="1"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_title">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/ecoseMainWhite"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Posición"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/ecoseMainWhite"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nombre"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/ecoseMainWhite"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Acciones Completadas"/>
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/ranking_table"
+        android:background="#00BFBF"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_header">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/medal"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="103.5dp"
+            android:layout_height="50dp"/>
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/medal_2"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/medal_3"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="1"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Andres\nBetancourt"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="1"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Kevin\nUlloa"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="1"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Leidy\nRomero"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="2"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="180dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="2570"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="2"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="180dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="1142"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="2"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="180dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="937"
+            android:layout_height="wrap_content"/>
+
+
+    </GridLayout>
+
+    <androidx.cardview.widget.CardView
+        android:background="#fbab5b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ranking_table">
+        <GridLayout
+            android:rowCount="1"
+            android:columnCount="3"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/golden"
+           >
+            <TextView
+                android:paddingTop="21dp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp"
+                android:text="#90"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="103.5dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/ranking_user"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/ranking_user_actions"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="180dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_height="wrap_content"/>
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
